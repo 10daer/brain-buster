@@ -1,136 +1,141 @@
 {
   "questions": [
     {
-      "question": "Which is the most popular JavaScript framework?",
-      "options": ["Angular", "React", "Svelte", "Vue"],
+      "question": "Which is the largest country by land area?",
+      "options": ["Canada", "China", "Brazil", "United States"],
       "correctOption": 1,
       "points": 10
     },
     {
-      "question": "Which company invented React?",
-      "options": ["Google", "Apple", "Netflix", "Facebook"],
+      "question": "Which country is home to the Great Barrier Reef?",
+      "options": ["United States", "Brazil", "Indonesia", "Australia"],
       "correctOption": 3,
       "points": 10
     },
     {
-      "question": "What's the fundamental building block of React apps?",
-      "options": ["Components", "Blocks", "Elements", "Effects"],
+      "question": "What is the fundamental geographical unit for defining political boundaries?",
+      "options": ["Continents", "Countries", "Regions", "States"],
       "correctOption": 0,
       "points": 10
     },
     {
-      "question": "What's the name of the syntax we use to describe the UI in React components?",
-      "options": ["FBJ", "Babel", "JSX", "ES2015"],
+      "question": "What term describes the imaginary lines that run north to south on a map?",
+      "options": ["Equators", "Latitudes", "Longitudes", "Meridians"],
       "correctOption": 2,
       "points": 10
     },
     {
-      "question": "How does data flow naturally in React apps?",
+      "question": "How do mountain ranges typically form?",
       "options": [
-        "From parents to children",
-        "From children to parents",
-        "Both ways",
-        "The developers decides"
+        "From tectonic plate movements",
+        "From river erosion",
+        "From volcanic activity",
+        "From human intervention"
       ],
       "correctOption": 0,
       "points": 10
     },
     {
-      "question": "How to pass data into a child component?",
-      "options": ["State", "Props", "PropTypes", "Parameters"],
+      "question": "How do explorers typically navigate between locations?",
+      "options": ["Instinct", "Coordinates", "Landmarks", "Terrain"],
       "correctOption": 1,
       "points": 10
     },
     {
-      "question": "When to use derived state?",
+      "question": "When should a topographical map be used?",
       "options": [
-        "Whenever the state should not trigger a re-render",
-        "Whenever the state can be synchronized with an effect",
-        "Whenever the state should be accessible to all components",
-        "Whenever the state can be computed from another state variable"
+        "For city planning",
+        "For tracking weather patterns",
+        "For understanding elevation changes",
+        "For determining population density"
       ],
-      "correctOption": 3,
+      "correctOption": 2,
       "points": 30
     },
     {
-      "question": "What triggers a UI re-render in React?",
+      "question": "What primarily changes the landscape of a region?",
       "options": [
-        "Running an effect",
-        "Passing props",
-        "Updating state",
-        "Adding event listeners to DOM elements"
+        "Human settlement",
+        "Political boundaries",
+        "Climate and geological processes",
+        "Transportation routes"
       ],
       "correctOption": 2,
       "points": 20
     },
     {
-      "question": "When do we directly \"touch\" the DOM in React?",
+      "question": "When do geographers rarely interact directly with a physical landscape?",
       "options": [
-        "When we need to listen to an event",
-        "When we need to change the UI",
-        "When we need to add styles",
+        "When studying satellite imagery",
+        "When collecting field data",
+        "When analyzing terrain",
         "Almost never"
       ],
       "correctOption": 3,
       "points": 20
     },
     {
-      "question": "In what situation do we use a callback to update state?",
+      "question": "In what situation would geographers use historical data to understand current landscapes?",
       "options": [
-        "When updating the state will be slow",
-        "When the updated state is very data-intensive",
-        "When the state update should happen faster",
-        "When the new state depends on the previous state"
+        "When studying slow-changing environments",
+        "When tracking rapid urbanization",
+        "When analyzing climate change impacts",
+        "When the current landscape depends on past geological conditions"
       ],
       "correctOption": 3,
       "points": 30
     },
     {
-      "question": "If we pass a function to useState, when will that function be called?",
+      "question": "If a geological model is created with initial parameters, when will those parameters be established?",
       "options": [
-        "On each re-render",
-        "Each time we update the state",
-        "Only on the initial render",
-        "The first time we update the state"
+        "On each model iteration",
+        "Each time the model is updated",
+        "Only during the initial model creation",
+        "The first time the model is refined"
       ],
       "correctOption": 2,
       "points": 30
     },
     {
-      "question": "Which hook to use for an API request on the component's initial render?",
-      "options": ["useState", "useEffect", "useRef", "useReducer"],
+      "question": "Which method is best for initial ecosystem mapping of a region?",
+      "options": [
+        "Ground surveys",
+        "Satellite imaging",
+        "Local interviews",
+        "Climate records"
+      ],
       "correctOption": 1,
       "points": 10
     },
     {
-      "question": "Which variables should go into the useEffect dependency array?",
+      "question": "Which factors should be considered when studying a geographical region?",
       "options": [
         "Usually none",
-        "All our state variables",
-        "All state and props referenced in the effect",
-        "All variables needed for clean up"
+        "All environmental variables",
+        "All geographical and demographic factors",
+        "All variables needed for comprehensive analysis"
       ],
       "correctOption": 2,
       "points": 30
     },
     {
-      "question": "An effect will always run on the initial render.",
+      "question": "A geographical survey will always include initial baseline data.",
       "options": [
         "True",
-        "It depends on the dependency array",
+        "It depends on research methodology",
         "False",
-        "In depends on the code in the effect"
+        "It depends on funding availability"
       ],
       "correctOption": 0,
       "points": 30
     },
     {
-      "question": "When will an effect run if it doesn't have a dependency array?",
+      "question": "When will a geographical analysis be repeated if no new methodology is introduced?",
       "options": [
-        "Only when the component mounts",
-        "Only when the component unmounts",
-        "The first time the component re-renders",
-        "Each time the component is re-rendered"
+        "Only when new funding is available",
+        "Only when previous data is incomplete",
+        "When initial baseline comparisons are needed",
+        "Each time new data becomes available"
       ],
       "correctOption": 3,
       "points": 20

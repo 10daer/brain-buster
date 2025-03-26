@@ -11,6 +11,7 @@ import Progress from "./components/Progress";
 import Question from "./components/Question";
 import StartScreen from "./components/StartScreen";
 import Timer from "./components/Timer";
+import { questions as newQuestions } from "./data/questions.json";
 
 const Timersecs = 30;
 
@@ -29,6 +30,7 @@ const initialstate = {
 };
 
 function reducer(state, action) {
+  const question = state.questions[state.index];
   switch (action.type) {
     case "Success":
       return { ...state, questions: action.payload, status: "success" };
@@ -60,7 +62,6 @@ function reducer(state, action) {
       };
 
     case "chooseAnswer":
-      const question = state.questions[state.index];
       return {
         ...state,
         chosenAnswer: action.payload,
@@ -140,16 +141,11 @@ export default function App() {
   };
 
   useEffect(() => {
-    fetch("http://localhost:8000/questions")
-      .then((res) => res.json())
-      .then((questions) =>
-        dispatch({
-          type: "Success",
-          payload: processQuestion(questions, numOfQuestions),
-        })
-      )
-      .catch((err) => dispatch({ type: "Error" }));
-  }, [dispatch, numOfQuestions]);
+    dispatch({
+      type: "Success",
+      payload: processQuestion(newQuestions, numOfQuestions),
+    });
+  }, [numOfQuestions]);
 
   useEffect(() => {
     const highScore = localStorage.getItem("HighScore") || 0;
